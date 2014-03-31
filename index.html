@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>EP6 Apps</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	
+	<link rel="stylesheet" type="text/css" href="jqmobile/jquery.mobile-1.4.2.min.css">
+	
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="jqmobile/jquery.mobile-1.4.2.min.js" charset="utf-8"></script>
+	<!--<script type="text/javascript" src="js/jquery.jsonp-2.4.0" charset="utf-8"></script>-->
+	<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+<div data-role="page" id="inputarea">
+	<div data-role="content">
+		<div>
+			<form id="frmBarCode" action="javascript:CheckBarCode()" >
+				<input name="txtbarcode" type="text" />
+				<input type="submit" name="btnSubmit" value="Submit" / >
+			</form>
+		</div>
+	</div>
+</div>
+	
+<div data-role="page" id="Display">
+	<div data-role="header"><a href="#" onclick="history.back(1)">Back</a>
+	<h1></h1></div>
+	<div data-role="content">
+		<div id="DisplayBarCode" ></div>
+	</div>
+</div>
+</body>
+</html>
